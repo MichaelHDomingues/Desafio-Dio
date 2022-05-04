@@ -1,0 +1,17 @@
+processo para geração chave pública ssh no gitbash
+1 - ssh-keygen -t ed25519 -C email da conta github
+2 - digita uma senha
+3 - cd (pasta local para geração dos arquivos)
+4 - ls
+5 - cat id_ed25519.pub
+6 - copia e adiciona ao github em ssh keys
+
+processo para geração de chave privada ssh agent 
+1 - eval $(ssh-agent -s)
+2 - gera o número do agent pid
+3 - ls 
+4 - ssh-add id_ed25519
+5 - copia chave ssh do github em code (clona uma chave) e adiciona em uma pasta no bash
+6 - git clone (cola a chave copiada do github)
+7 - yes
+8 - ls (aparece o repositório do github)
